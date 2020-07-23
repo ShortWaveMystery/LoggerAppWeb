@@ -1,68 +1,137 @@
 import React from 'react'
-import {Dropdown,Table, FormControl,Navbar ,Nav, Form, Row,Button } from 'react-bootstrap'
+
+import { Form, FormGroup, FormControl, FormLabel, Button, Well, Col, Row } from "react-bootstrap";
+
 import {Home} from './Home';
 import {EntryLog} from './EntryLog';
 import {FindLogStack} from './FindLogStack';
 
 
 export const Timesheet = () => (
+  
     
         <div>
-           <>
-            <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                <Nav className="mr-auto">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/EntryLog">Entry Log</Nav.Link>
-                <Nav.Link href="/FindLogStack">Find Log Stack</Nav.Link>
-                <Nav.Link href="/Timesheet">Timesheet</Nav.Link>
-                </Nav>
-            </Navbar>
-            </>
-            <h1>This is Timesheet Page</h1>
-            <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                Pick a time range
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Yesterday</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Last 3 days</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Last week</Dropdown.Item>
-            </Dropdown.Menu>
-            </Dropdown>
-            <Table striped bordered hover>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Product Name</th>
-      <th>Log ID</th>
-      <th>Employee In </th>
-      <th>Employee Out </th>
-      <th>Date In </th>
-      <th>Date Out </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Jet </td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td colSpan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</Table>
+          <Row>
+          <Col md={12} lg={6}>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='firstname'
+              placeholder='First Name'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='lastname'
+              placeholder='Last Name'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='middleinitial'
+              placeholder='Middle Initial'
+              maxLength={1} />
+          </FormGroup>
+          </Col>
+          <div className='hidden-lg'>
+            <hr />
+          </div>
+          <Col md={12} lg={6}>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='address'
+              placeholder='Address'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='city'
+              placeholder='City'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='state'
+              placeholder='State'
+              required
+              maxLength={2} />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='zip'
+              placeholder='Zip'
+              required
+              maxLength={5} />
+          </FormGroup>
+          </Col>
+        </Row>
+        <Row>
+          <div className='hidden-lg'>
+            <hr />
+          </div>
+        </Row>
+        <Row>
+          <Col md={12} lg={6}>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='tel'
+              name='phone'
+              placeholder='Phone'
+              data-format='(999) 999-9999'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='tel'
+              name='alternate'
+              placeholder='Alternate Phone'
+              data-format='(999) 999-9999' />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='email'
+              name='email'
+              placeholder='Email Address'
+              required />
+          </FormGroup>
+          </Col>
+          <Col md={12} lg={6}>
+          <FormGroup>
+            <FormGroup>
+              <FormLabel>Date of Birth</FormLabel>
+              <input
+                type='date'
+                className='form-control'
+                name='dob'
+                required />
+            </FormGroup>
+            <FormGroup>
+              <input
+                type='text'
+                className='form-control'
+                name='social'
+                placeholder='Social Security #'
+                required />
+            </FormGroup>
+          </FormGroup>
+          </Col>
+        </Row>
         </div>
     
 )
