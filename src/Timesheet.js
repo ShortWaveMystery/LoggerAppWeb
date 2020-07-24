@@ -8,8 +8,8 @@ import {FindLogStack} from './FindLogStack';
 
 
 export const Timesheet = () => (
-  
-    
+        
+
         <div>
           <Row>
           <Col md={12} lg={6}>
@@ -17,53 +17,40 @@ export const Timesheet = () => (
             <input
               className='form-control'
               type='text'
-              name='firstname'
-              placeholder='First Name'
+              name='pilotname'
+              placeholder='Pilot Name'
               required />
           </FormGroup>
           <FormGroup>
             <input
               className='form-control'
               type='text'
-              name='lastname'
-              placeholder='Last Name'
+              name='pilot #'
+              placeholder='Pilot #'
               required />
           </FormGroup>
           <FormGroup>
             <input
               className='form-control'
               type='text'
-              name='middleinitial'
-              placeholder='Middle Initial'
-              maxLength={1} />
-          </FormGroup>
-          </Col>
-          <div className='hidden-lg'>
-            <hr />
-          </div>
-          <Col md={12} lg={6}>
-          <FormGroup>
-            <input
-              className='form-control'
-              type='text'
-              name='address'
-              placeholder='Address'
+              name='pilotaddress'
+              placeholder='Pilot Address'
               required />
           </FormGroup>
           <FormGroup>
             <input
               className='form-control'
               type='text'
-              name='city'
-              placeholder='City'
+              name='pilotcity'
+              placeholder='Pilot City'
               required />
           </FormGroup>
           <FormGroup>
             <input
               className='form-control'
               type='text'
-              name='state'
-              placeholder='State'
+              name='pilotstate'
+              placeholder='Pilot State'
               required
               maxLength={2} />
           </FormGroup>
@@ -71,8 +58,8 @@ export const Timesheet = () => (
             <input
               className='form-control'
               type='text'
-              name='zip'
-              placeholder='Zip'
+              name='pilotzip/postalcode'
+              placeholder='Pilot Zip/Postal Code'
               required
               maxLength={5} />
           </FormGroup>
@@ -89,50 +76,250 @@ export const Timesheet = () => (
             <input
               className='form-control'
               type='tel'
-              name='phone'
-              placeholder='Phone'
+              name='pilotphone'
+              placeholder='Pilot Phone'
               data-format='(999) 999-9999'
               required />
           </FormGroup>
           <FormGroup>
             <input
               className='form-control'
+              type='email'
+              name='pilotemail'
+              placeholder='Pilot E-mail Address'
+              required />
+          </FormGroup>
+
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='instructorname'
+              placeholder='Instructor Name'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='instructoraddress'
+              placeholder='Instructor Address'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='instructorcity'
+              placeholder='Instructor City'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='instructorstate'
+              placeholder='Instructor State'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='instructorzip'
+              placeholder='Instructor Zip/PostalCode'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
               type='tel'
-              name='alternate'
-              placeholder='Alternate Phone'
-              data-format='(999) 999-9999' />
+              name='instructorphone'
+              placeholder='Instructor Phone'
+              required />
           </FormGroup>
           <FormGroup>
             <input
               className='form-control'
               type='email'
-              name='email'
-              placeholder='Email Address'
+              name='instructoremail'
+              placeholder='Instructor E-mail'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='instructor'
+              placeholder='Instructor #'
               required />
           </FormGroup>
           </Col>
           <Col md={12} lg={6}>
           <FormGroup>
-            <FormGroup>
-              <FormLabel>Date of Birth</FormLabel>
-              <input
-                type='date'
-                className='form-control'
-                name='dob'
-                required />
-            </FormGroup>
-            <FormGroup>
-              <input
-                type='text'
-                className='form-control'
-                name='social'
-                placeholder='Social Security #'
-                required />
-            </FormGroup>
           </FormGroup>
           </Col>
         </Row>
         </div>
+
+        
+
+)
+
+export const Timesheet = () => (
+        
     
+  <div>
+    <Row>
+    <Col md={12} lg={6}>
+    <FormGroup>
+      <input
+        className='form-control'
+        type='text'
+        name='studentname'
+        placeholder='Student Name'
+        required />
+    </FormGroup>
+    <FormGroup>
+      <input
+        className='form-control'
+        type='text'
+        name='student #'
+        placeholder='Student #'
+        required />
+    </FormGroup>
+    <FormGroup>
+      <input
+        className='form-control'
+        type='text'
+        name='studentaddress'
+        placeholder='Student Address'
+        required />
+    </FormGroup>
+    <FormGroup>
+      <input
+        className='form-control'
+        type='text'
+        name='studentcity'
+        placeholder='Student City'
+        required />
+    </FormGroup>
+    <FormGroup>
+      <input
+        className='form-control'
+        type='text'
+        name='studentstate'
+        placeholder='Student State'
+        required
+        maxLength={2} />
+    </FormGroup>
+    <FormGroup>
+      <input
+        className='form-control'
+        type='text'
+        name='pilotzip/postalcode'
+        placeholder='Pilot Zip/Postal Code'
+        required
+        maxLength={5} />
+    </FormGroup>
+    </Col>
+  </Row>
+  <Row>
+    <div className='hidden-lg'>
+      <hr />
+    </div>
+  </Row>
+  <Row>
+    <Col md={12} lg={6}>
+    <FormGroup>
+      <input
+        className='form-control'
+        type='tel'
+        name='studentphone'
+        placeholder='Student Phone'
+        data-format='(999) 999-9999'
+        required />
+    </FormGroup>
+    <FormGroup>
+      <input
+        className='form-control'
+        type='email'
+        name='studentemail'
+        placeholder='Student E-mail Address'
+        required />
+    </FormGroup>
+    
+    <FormGroup>
+            <input
+              className='form-control'
+              type='name'
+              name='instructorname'
+              placeholder='Instructor Name'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='address'
+              name='instructoraddress'
+              placeholder='Instructor Address'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='city'
+              name='instructorcity'
+              placeholder='Instructor City'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='state'
+              name='instructorstate'
+              placeholder='Instructor State'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='zip'
+              name='instructorzip'
+              placeholder='Instructor Zip/PostalCode'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='tel'
+              name='instructorphone'
+              placeholder='Instructor Phone'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='email'
+              name='instructoremail'
+              placeholder='Instructor E-mail'
+              required />
+          </FormGroup>
+          <FormGroup>
+            <input
+              className='form-control'
+              type='text'
+              name='instructor #'
+              placeholder='Instructor #'
+              required />
+          </FormGroup>
+    </Col>
+    <Col md={12} lg={6}>
+    <FormGroup>
+    </FormGroup>
+    </Col>
+  </Row>
+  </div>
+
 )
 
