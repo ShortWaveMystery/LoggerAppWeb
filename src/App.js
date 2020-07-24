@@ -18,6 +18,7 @@ class App extends Component
           <Route  path="/entryLog" component={EntryLog}/>
           <Route  path="/findLogStack" component={FindLogStack}/>
           <Route  path="/Timesheet" component={Timesheet}/>
+          <Route  path="/Timesheet" component={Timesheet}/>
        
         </Switch>
         </Router>
