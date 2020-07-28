@@ -13,8 +13,7 @@ export const Timesheet = () => (
         <div>
           <img src="splash.png" alt="logo" width="200" height="200"></img>
           <h3>Pilot Registration Form</h3>
-          <h6>The student wants to register as an ultralight student pilot. The student needs to find a authroized FAA flight instructor, to conduct flight instruction for an ultralight student pilot.</h6> 
-          <h3>This shows that the student has been trained and tested to a minimum standard.</h3>
+          <h6>The student wants to register as an ultralight student pilot. The student needs to find a authroized FAA flight instructor, to conduct flight instruction for an ultralight student pilot. This shows that the student has been trained and tested to a minimum standard.</h6> 
 
           <Row>
           <Col md={12} lg={6}>
@@ -166,8 +165,9 @@ export const Timesheet = () => (
           </FormGroup>
           </Col>
         </Row>
+  
+        <Button variant="success" size="lg">Apply</Button> 
 
-        <p>Fill in the information above</p>
         <p>P.O. Box 3086</p>
         <p>Whtiby, ON L1P 1V4</p>
         <p>Telephone: 647-913-4357</p>
@@ -175,6 +175,7 @@ export const Timesheet = () => (
         </div>
 
         
-        
+ 
+
 
 )
