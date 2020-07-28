@@ -12,7 +12,7 @@ export const Timesheet = () => (
 
         <div>
           <img src="splash.png" alt="logo" width="200" height="200"></img>
-          <h3>Pilot Registration Form</h3>
+          <h3>Registration Form</h3>
           <h6>The student wants to register as an ultralight student pilot. The student needs to find a authroized FAA flight instructor, to conduct flight instruction for an ultralight student pilot. This shows that the student has been trained and tested to a minimum standard.</h6> 
 
           <Row>
