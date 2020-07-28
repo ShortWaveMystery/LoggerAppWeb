@@ -165,13 +165,13 @@ export const Timesheet = () => (
           </FormGroup>
           </Col>
         </Row>
-  
-        <Button variant="success" size="lg">Apply</Button> 
+
+        <Button variant="success">Apply</Button> 
 
         <p>P.O. Box 3086</p>
         <p>Whtiby, ON L1P 1V4</p>
         <p>Telephone: 647-913-4357</p>
-        <p><a href="https://warren.leslie@hotmail.com">Via E-mail</a></p>
+        <p><a href="membership@logentry.org">Via E-mail</a></p>
         </div>
 
         
