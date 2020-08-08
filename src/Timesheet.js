@@ -13,7 +13,7 @@ export const Timesheet = () => (
         <div>
           <img src="splash.png" alt="logo" width="200" height="200"></img>
           <h3>Registration Form</h3>
-          <h6>The student wants to register as an ultralight student pilot. The student needs to find a authroized FAA flight instructor, to conduct flight instruction for an ultralight student pilot. This shows that the student has been trained and tested to a minimum standard.</h6> 
+          <h6>The student wants to register as a student pilot of an ultralight aircraft. The student is required to locate an FAA Authorized Instructor to instruct the Ultralight Student Pilot. This indicates that the student has been trained and tested at the minimum standard.</h6> 
 
           <Row>
           <Col md={12} lg={6}>
@@ -160,7 +160,7 @@ export const Timesheet = () => (
               required />
           </FormGroup>
           </Col>
-          <Col md={12} lg={6}>
+          <Col md={12} lg={6}> 
           <FormGroup>
           </FormGroup>
           </Col>
@@ -169,7 +169,7 @@ export const Timesheet = () => (
         <Button variant="success">Apply</Button> 
 
         <p>P.O. Box 3086</p>
-        <p>Whtiby, ON L1P 1V4</p>
+        <p>Whitby, ON L1P 1V4</p>
         <p>Telephone: 647-913-4357</p>
         <p><a href="membership@logentry.org">Via E-mail</a></p>
         </div>
