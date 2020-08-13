@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 import {Home} from './Home';
-import {EntryLog} from './EntryLog';
-import {FindLogStack} from './FindLogStack';
-import {Timesheet} from './Timesheet';
+import {Login} from './Login';
 
 class App extends Component
 {
@@ -14,11 +12,9 @@ class App extends Component
         <Router>
         <Switch>
         
-          <Route  exact path="/" component={Home}/>
-          <Route  path="/entryLog" component={EntryLog}/>
-          <Route  path="/findLogStack" component={FindLogStack}/>
-          <Route  path="/Timesheet" component={Timesheet}/>
-          <Route  path="/Timesheet" component={Timesheet}/>
+          <Route  exact path="/" component={Login}/>
+          <Route  path="/Home" component={Home}/>
+         
        
         </Switch>
         </Router>
