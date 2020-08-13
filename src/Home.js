@@ -2,8 +2,13 @@ import React from 'react'
 import { FormControl,Navbar,Table ,Nav, Form, Row,Button } from 'react-bootstrap'
 import {Login} from './Login';
 
-
+state = { show: false };
+showModal = () => {
+    this.setState({ show: true });
+  };
 export const Home = () => (
+
+
         <div>
             <>
             <Navbar bg="dark" variant="dark">
@@ -36,7 +41,7 @@ export const Home = () => (
     
   </tbody>
 </Table>
-<Button>New Entry</Button>
+<Button onClick={this.showModal}>New Entry</Button>
         </div>
 )
 
